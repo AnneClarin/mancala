@@ -1,0 +1,14 @@
+1. Player picks a pit to distribute
+    a. Create an array for all of the pits/stores
+        - each pit/store will be an array
+    b. Remove elements in chosen pit array
+2. Player Stones are distributed into pits/store counter-clockwise
+    a. Add 1 element from chosen array into each of the consecutive pit arrays
+    b. When stones run out, signal computer's turn
+5. If stone lands in an empty pit then it goes into the store of the player, along with stones in opposite pit
+    a. If pit array is equal to 1, then remove from pit array and add to store array
+    b. Remove all elements from opposite array and add to store array
+6. Award winner points each time stones are added into the store
+    a. Array length will reflect player's points
+7. Game ends when one side no longer has any stones
+    a. Compare scores, determine a winner by the player with the highest number of stones in the store.
