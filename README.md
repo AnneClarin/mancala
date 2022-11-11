@@ -24,9 +24,9 @@ If your last stone lands in an empty pit on your side, that stone goes to your s
 - CSS
 - JavaScript
 
-## Play the Game
+## Getting Started
 
-The game can be accessed [here](https://anneclarin.github.io/mancala/).
+The game can be accessed [here](https://anneclarin.github.io/mancala/). Reminder: This is a two-player game!
 
 ## Future Work
 
