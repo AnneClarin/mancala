@@ -1,19 +1,31 @@
 body {
-    background-color: lightblue;
+    background-color: #9FCAD6;
 }
-h1, h2 {
+h1, h2, h3, button{
     text-align: center;
-
+    font-family: 'Nanum Brush Script', cursive;
+    color: #008B92;
+    text-shadow: -1px -1px 0 #D9E0E9, 1px -1px 0 #D9E0E9, -1px 1px 0 #D9E0E9, 1px 1px 0 #D9E0E9;
+}
+h1 {
+    font-size: 75px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+h2, h3, button {
+    font-size: 50px;
+    margin: 15px auto;
 }
 .gameboard {
     display: grid;
-    height: 210px;
-    width: 870px;
-    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px;
-    grid-template-rows: 100px 100px;
+    height: 260px;
+    width: 1070px;
+    grid-template-columns: 125px 125px 125px 125px 125px 125px 125px 125px;
+    grid-template-rows: 125px 125px;
     gap: 10px;
     padding: 10px;
     border: 2px solid #deaa88;
+    border-radius: 15%;
     margin: 50px auto;
     background-color: #deaa88;
     box-shadow: 5px 5px 5px #5C4033;
@@ -21,6 +33,7 @@ h1, h2 {
 .pit {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
     border: 2px solid #deaa88;
     border-radius: 50%;
     background-color: #edc9af;
@@ -42,9 +55,10 @@ h1, h2 {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: 40%;
+    width: 50%;
     text-align: center;
-    margin: 50px auto;
+    margin: 25px auto;
+    line-height: 50px;
 }
 button {
     width: 25%;
@@ -53,4 +67,8 @@ button {
     justify-content: center;
     align-items: center;
     margin: 30px auto;
+    background-color: #edc9af;
+    border-radius: 50%;
+    border: 5px solid #deaa88;
+    box-shadow: 5px 5px 5px #5C4033;
 }

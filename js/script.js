@@ -121,36 +121,36 @@ function render() {
         gameboard[idx].forEach(elem => {
             if (elem == "r1") { 
                 let divEl = document.createElement('div')
-                divEl.style.width = "15px";
-                divEl.style.height = "15px";
+                divEl.style.width = "20px";
+                divEl.style.height = "20px";
                 divEl.style.borderRadius = "50%";
                 divEl.style.backgroundColor = "red";
-                divEl.style.boxShadow = "2px 2px #8B0000";
-                pit.appendChild(divEl)
+                divEl.style.boxShadow = "-2px -2px 4px #8B0000 inset";
+                pit.appendChild(divEl);
             } else  if (elem == "b1") { 
                 let divEl = document.createElement('div')
-                divEl.style.width = "15px";
-                divEl.style.height = "15px";
+                divEl.style.width = "20px";
+                divEl.style.height = "20px";
                 divEl.style.borderRadius = "50%";
                 divEl.style.backgroundColor = "blue";
-                divEl.style.boxShadow = "2px 2px #152238";
-                pit.appendChild(divEl)
+                divEl.style.boxShadow = "-2px -2px 4px #152238 inset";
+                pit.appendChild(divEl);
             }  else if (elem == "g1") { 
                 let divEl = document.createElement('div')
-                divEl.style.width = "15px";
-                divEl.style.height = "15px";
+                divEl.style.width = "20px";
+                divEl.style.height = "20px";
                 divEl.style.borderRadius = "50%";
                 divEl.style.backgroundColor = "green";
-                divEl.style.boxShadow = "2px 2px #023020";
-                pit.appendChild(divEl)
+                divEl.style.boxShadow = "-2px -2px 4px #023020 inset";
+                pit.appendChild(divEl);
             }  else if (elem == "y1") { 
                 let divEl = document.createElement('div')
-                divEl.style.width = "15px";
-                divEl.style.height = "15px";
+                divEl.style.width = "20px";
+                divEl.style.height = "20px";
                 divEl.style.borderRadius = "50%";
                 divEl.style.backgroundColor = "yellow";
-                divEl.style.boxShadow = "2px 2px #8B8000";
-                pit.appendChild(divEl)
+                divEl.style.boxShadow = "-2px -2px 4px #8B8000 inset";
+                pit.appendChild(divEl);
             }
         });
     });
