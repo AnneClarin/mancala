@@ -70,20 +70,12 @@ function steal(lastPiece, targetNum) {
             }
         gameboard[targetNum] = [];
         adjacent.forEach(subArr => {
-            if (subArr[0] == targetNum) {
-                if (turn == 1) {
-                    gameboard[6] = [...gameboard[6], gameboard[subArr[1]]].flat(Infinity);
-                } else {
-                    gameboard[13] = [...gameboard[13], gameboard[subArr[1]]].flat(Infinity);
-                }
-                gameboard[subArr[1]] = [];
-            } else if (subArr[1] == targetNum) {
-                if (turn == 1) {
-                    gameboard[6] = [...gameboard[6], gameboard[subArr[0]]].flat(Infinity);
-                } else {
-                    gameboard[13] = [...gameboard[13], gameboard[subArr[0]]].flat(Infinity);
-                }
-                gameboard[subArr[0]] =[];
+            if (subArr[0] == targetNum && turn === 1) {
+                gameboard[6] = [...gameboard[6], gameboard[subArr[1]]].flat(Infinity)
+                gameboard[subArr[1]] = []
+            } else if (subArr[1] == targetNum && turn === -1) {
+                gameboard[13] = [...gameboard[13], gameboard[subArr[0]]].flat(Infinity)
+                gameboard[subArr[0]] =[]
             }
         }) 
         }
