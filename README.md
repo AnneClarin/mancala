@@ -6,10 +6,10 @@ Mancala is a two-player game that dates back to ancient times. The game starts o
 
 ## Special Conditions
 
-*Play Again*
+*Play Again*  
 If your last stone getting dispersed lands in your store, you can take another turn.
 
-*Steal*
+*Steal*  
 If your last stone lands in an empty pit on your side, that stone goes to your store along with the stones in the pit across!
 
 ## Screenshots
